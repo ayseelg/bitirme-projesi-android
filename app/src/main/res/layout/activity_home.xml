@@ -50,7 +50,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="🏗️ Deprem Sonrası Hasar Tespiti"
+                    android:text="🧠 Beyin Tümörü Tespiti"
                     android:textSize="20sp"
                     android:textStyle="bold"
                     android:textColor="#FFFFFF"/>
@@ -58,7 +58,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Yapay Zeka Destekli Beton Yüzey Analizi"
+                    android:text="Yapay Zeka Destekli MR Analizi"
                     android:textSize="13sp"
                     android:textColor="#E5E7EB"
                     android:layout_marginTop="4dp"/>
@@ -95,7 +95,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Bu uygulama, deprem sonrası beton ve yapı yüzeyi fotoğraflarını yapay zeka ile analiz ederek hasar sınıfı hakkında hızlı bir ön değerlendirme sunar."
+                    android:text="Bu uygulama, beyin MR görüntülerini yapay zeka ile analiz ederek tümör varlığına dair ön değerlendirme sunar."
                     android:textSize="13sp"
                     android:textColor="#374151"
                     android:layout_marginTop="8dp"
@@ -120,7 +120,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="• Beton/yapı yüzeyi fotoğrafı kullanıcı tarafından yüklenir\n• Görüntü modele uygun biçimde hazırlanır\n• YOLO tabanlı model hasarı sınıflandırır\n• Sonuçlar hasar sınıfı ve güven skoru ile sunulur"
+                    android:text="• MR görüntüsü kullanıcı tarafından yüklenir\n• Görüntü ön işleme aşamalarından geçirilir\n• Eğitilmiş yapay zeka modeli analiz yapar\n• Sonuçlar görsel ve metinsel olarak sunulur"
                     android:textSize="13sp"
                     android:textColor="#374151"
                     android:layout_marginTop="8dp"
@@ -137,7 +137,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="⚠️ Teknik ve Yasal Uyarı"
+                    android:text="⚠️ Tıbbi ve Yasal Uyarı"
                     android:textStyle="bold"
                     android:textSize="14sp"
                     android:textColor="#991B1B"/>
@@ -145,7 +145,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Bu uygulama kesin mühendislik raporu yerine geçmez. Sonuçlar ön değerlendirme amaçlıdır. Nihai karar için mutlaka uzman inşaat mühendisi/saha incelemesi gereklidir."
+                    android:text="Bu uygulama tıbbi tanı koyma amacı taşımaz. Sunulan sonuçlar yalnızca bilgilendirme amaçlıdır. Kesin tanı için mutlaka uzman hekim görüşü alınmalıdır."
                     android:textSize="12.5sp"
                     android:textColor="#7F1D1D"
                     android:layout_marginTop="6dp"

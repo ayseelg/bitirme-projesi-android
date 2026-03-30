@@ -3,12 +3,12 @@
 
     <item
         android:id="@+id/nav_detection"
-        android:title="Hasar Tespiti"
+        android:title="Tümör Tespiti"
         android:icon="@android:drawable/ic_menu_search"/>
 
     <item
         android:id="@+id/nav_segmentation"
-        android:title="Beton Hasar Bilgilendirme"
+        android:title="Beyin Tümörü Bilgilendirme"
         android:icon="@android:drawable/ic_menu_crop"/>
 
     <item
