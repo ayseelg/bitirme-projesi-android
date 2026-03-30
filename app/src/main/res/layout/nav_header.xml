@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/bg_gradient_header"
+    android:gravity="bottom">
+
+    <!-- Kullanıcı İsmi -->
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kullanıcı Adı"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"/>
+
+    <!-- İsteğe bağlı olarak mail veya başka bilgi eklenebilir -->
+    <TextView
+        android:id="@+id/tvUserEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="email@ornek.com"
+        android:textSize="14sp"
+        android:textColor="#E5E7EB"
+        android:layout_marginTop="4dp"/>
+</LinearLayout>

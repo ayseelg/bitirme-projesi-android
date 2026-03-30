@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- ANA İÇERİK -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F5F7FA">
+
+        <!-- ÜST BAR (MENU + BAŞLIK) -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/topBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_gradient_header"
+            android:padding="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <!-- MENU BUTONU -->
+            <ImageButton
+                android:id="@+id/btnMenu"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_menu"
+                android:background="@android:color/transparent"
+                android:tint="#FFFFFF"
+                android:contentDescription="Menüyü aç"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <!-- BAŞLIK ALANI -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="12dp"
+                app:layout_constraintStart_toEndOf="@id/btnMenu"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🧠 Beyin Tümörü Tespiti"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yapay Zeka Destekli MR Analizi"
+                    android:textSize="13sp"
+                    android:textColor="#E5E7EB"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- ANA KART -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="6dp"
+            app:layout_constraintTop_toBottomOf="@id/topBar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <!-- UYGULAMA TANIMI -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📌 Uygulama Tanımı"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="#1F2937"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bu uygulama, beyin MR görüntülerini yapay zeka ile analiz ederek tümör varlığına dair ön değerlendirme sunar."
+                    android:textSize="13sp"
+                    android:textColor="#374151"
+                    android:layout_marginTop="8dp"
+                    android:lineSpacingExtra="2dp"/>
+
+                <!-- AYIRICI -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginVertical="16dp"
+                    android:background="#E5E7EB"/>
+
+                <!-- ÇALIŞMA PRENSİBİ -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="⚙️ Çalışma Prensibi"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="#1F2937"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• MR görüntüsü kullanıcı tarafından yüklenir\n• Görüntü ön işleme aşamalarından geçirilir\n• Eğitilmiş yapay zeka modeli analiz yapar\n• Sonuçlar görsel ve metinsel olarak sunulur"
+                    android:textSize="13sp"
+                    android:textColor="#374151"
+                    android:layout_marginTop="8dp"
+                    android:lineSpacingExtra="4dp"/>
+
+                <!-- AYIRICI -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginVertical="16dp"
+                    android:background="#E5E7EB"/>
+
+                <!-- UYARI -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="⚠️ Tıbbi ve Yasal Uyarı"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="#991B1B"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bu uygulama tıbbi tanı koyma amacı taşımaz. Sunulan sonuçlar yalnızca bilgilendirme amaçlıdır. Kesin tanı için mutlaka uzman hekim görüşü alınmalıdır."
+                    android:textSize="12.5sp"
+                    android:textColor="#7F1D1D"
+                    android:layout_marginTop="6dp"
+                    android:lineSpacingExtra="2dp"/>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- DRAWER -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/drawer_menu"
+        app:headerLayout="@layout/nav_header"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>
