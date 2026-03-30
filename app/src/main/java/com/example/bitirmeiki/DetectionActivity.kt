@@ -64,10 +64,10 @@ class DetectionActivity : AppCompatActivity() {
         .build()
 
     private val tumorTypes = mapOf(
-        0 to "Glioma",
-        1 to "Meningioma",
-        2 to "Tümör Yok",
-        3 to "Pituitary"
+        0 to "Crack",
+        1 to "Efflorescence",
+        2 to "Exposed Rebar",
+        3 to "Spalling"
     )
 
     private val historyList = mutableListOf<AnalysisHistory>()
@@ -86,7 +86,7 @@ class DetectionActivity : AppCompatActivity() {
         loadHistoryFromFirestore()
 
         resultCard.isVisible = true
-        resultText.text = "Henüz analiz yapılmadı."
+        resultText.text = "Henüz hasar tespiti yapılmadı."
         resultImage.isVisible = false
 
         val pickImage =
@@ -186,9 +186,9 @@ class DetectionActivity : AppCompatActivity() {
     }
 
     private fun showResult(predictedClass: Int, confidence: Int) {
-        val tumor = tumorTypes[predictedClass] ?: "Bilinmeyen"
+        val damageClass = tumorTypes[predictedClass] ?: "Bilinmeyen"
         resultText.text =
-            "Sonuç:\nTür: $tumor\nGüven: %$confidence\nModel: $selectedModel"
+            "Tespit Sonucu:\nHasar Sınıfı: $damageClass\nGüven: %$confidence\nModel: $selectedModel"
     }
 
     // 🔥 KULLANICIYA ÖZEL KAYIT

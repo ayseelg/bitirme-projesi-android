@@ -38,7 +38,7 @@
                 android:id="@+id/tvMainTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Beyin Tümörü Bilgilendirme"
+                android:text="Beton Hasar Bilgilendirme"
                 android:textSize="24sp"
                 android:textStyle="bold"
                 android:textColor="#0D47A1"
@@ -49,7 +49,7 @@
                 android:id="@+id/tvSubtitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Tıbbi bilgilendirme amaçlıdır"
+                android:text="Deprem sonrası hızlı ön değerlendirme amaçlıdır"
                 android:textSize="14sp"
                 android:textColor="#546E7A"
                 android:gravity="center"
@@ -71,7 +71,7 @@
 
                     <!-- Nedir -->
                     <TextView
-                        android:text="Beyin Tümörü Nedir?"
+                        android:text="Bu Uygulama Ne Yapar?"
                         android:textSize="18sp"
                         android:textStyle="bold"
                         android:textColor="#1565C0"
@@ -79,7 +79,7 @@
                         android:layout_height="wrap_content"/>
 
                     <TextView
-                        android:text="Beyin tümörü, beyinde veya beyni çevreleyen dokularda hücrelerin kontrolsüz çoğalması sonucu oluşan kitlelerdir. İyi huylu (benign) veya kötü huylu (malign) olabilir."
+                        android:text="Uygulama, yapı yüzey fotoğraflarında deprem kaynaklı bozulma işaretlerini tespit etmeye yardımcı olur. Model sonucu ön inceleme niteliğindedir."
                         android:textSize="15sp"
                         android:textColor="#37474F"
                         android:layout_marginTop="8dp"
@@ -94,7 +94,7 @@
 
                     <!-- Türler -->
                     <TextView
-                        android:text="Tümör Türleri"
+                        android:text="Tespit Edilen Sınıflar"
                         android:textSize="18sp"
                         android:textStyle="bold"
                         android:textColor="#1565C0"
@@ -102,7 +102,7 @@
                         android:layout_height="wrap_content"/>
 
                     <TextView
-                        android:text="• İyi huylu tümörler: Yavaş büyür, çevre dokulara yayılmaz.\n• Kötü huylu tümörler: Hızlı büyüyebilir ve beyin fonksiyonlarını ciddi şekilde etkileyebilir."
+                        android:text="• Crack: Yüzeyde çatlak oluşumu\n• Efflorescence: Yüzeyde beyaz tuz kusması\n• Exposed Rebar: Donatının açığa çıkması\n• Spalling: Beton örtüsünün dökülmesi"
                         android:textSize="15sp"
                         android:textColor="#37474F"
                         android:layout_marginTop="8dp"
@@ -117,7 +117,7 @@
 
                     <!-- Belirtiler -->
                     <TextView
-                        android:text="Olası Belirtiler"
+                        android:text="Sahada Dikkat Edilecek Bulgular"
                         android:textSize="18sp"
                         android:textStyle="bold"
                         android:textColor="#1565C0"
@@ -125,7 +125,7 @@
                         android:layout_height="wrap_content"/>
 
                     <TextView
-                        android:text="• Şiddetli baş ağrıları\n• Görme ve konuşma bozuklukları\n• Denge kaybı\n• Hafıza sorunları\n• Nöbet (epilepsi)"
+                        android:text="• Eğik/uzun süreklilik gösteren çatlaklar\n• Kolon-kiriş birleşimlerinde ayrılma\n• Donatı pası ve açık demir görünümü\n• Beton parça kopmaları"
                         android:textSize="15sp"
                         android:textColor="#37474F"
                         android:layout_marginTop="8dp"
@@ -140,7 +140,7 @@
 
                     <!-- Tanı -->
                     <TextView
-                        android:text="Tanı Yöntemleri"
+                        android:text="Modelin Kullanım Akışı"
                         android:textSize="18sp"
                         android:textStyle="bold"
                         android:textColor="#1565C0"
@@ -148,7 +148,7 @@
                         android:layout_height="wrap_content"/>
 
                     <TextView
-                        android:text="Beyin tümörleri genellikle MR (Manyetik Rezonans), BT (Bilgisayarlı Tomografi) ve biyopsi gibi yöntemlerle teşhis edilir."
+                        android:text="Fotoğraf yüklenir, model seçilir (YOLOv8/11/12), ardından sistem hasar sınıfı ve güven skoru üretir."
                         android:textSize="15sp"
                         android:textColor="#37474F"
                         android:layout_marginTop="8dp"
@@ -163,7 +163,7 @@
 
                     <!-- Tedavi -->
                     <TextView
-                        android:text="Tedavi Seçenekleri"
+                        android:text="Sonraki Teknik Adımlar"
                         android:textSize="18sp"
                         android:textStyle="bold"
                         android:textColor="#1565C0"
@@ -171,7 +171,7 @@
                         android:layout_height="wrap_content"/>
 
                     <TextView
-                        android:text="Tedavi; tümörün türüne, konumuna ve hastanın durumuna göre cerrahi, radyoterapi ve kemoterapiyi içerebilir."
+                        android:text="Model sonucu yüksek risk gösteriyorsa yerinde uzman incelemesi, detaylı hasar tespiti ve güçlendirme/onarım planlaması yapılmalıdır."
                         android:textSize="15sp"
                         android:textColor="#37474F"
                         android:layout_marginTop="8dp"
@@ -194,7 +194,7 @@
                         android:layout_height="wrap_content"/>
 
                     <TextView
-                        android:text="Bu uygulamada sunulan bilgiler tanı amacı taşımaz. Kesin teşhis ve tedavi için mutlaka bir sağlık uzmanına başvurulmalıdır."
+                        android:text="Bu uygulama resmi deprem performans analizi yerine geçmez. Sonuçlar yalnızca ön değerlendirme içindir; nihai karar yetkili uzman incelemesi ile verilmelidir."
                         android:textSize="14sp"
                         android:textColor="#455A64"
                         android:layout_marginTop="8dp"

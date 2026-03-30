@@ -84,7 +84,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="📤 Görüntü Yükle ve Tahlil Et"
+                    android:text="📤 Fotoğraf Yükle ve Hasarı Tespit Et"
                     android:textStyle="bold"
                     android:textSize="16sp"
                     android:layout_marginBottom="12dp"/>
@@ -103,7 +103,7 @@
                     android:layout_height="wrap_content"
                     android:textColor="@android:color/white"
                     android:backgroundTint="#1a73e8"
-                    android:text="📁 Görüntü Seç"/>
+                    android:text="📁 Fotoğraf Seç"/>
 
                 <Button
                     android:id="@+id/btnAnalyze"
@@ -112,7 +112,7 @@
                     android:layout_marginTop="12dp"
                     android:textColor="@android:color/white"
                     android:backgroundTint="#1a73e8"
-                    android:text="🔎 Analiz Et"/>
+                    android:text="🔎 Hasarı Tespit Et"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -135,7 +135,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="📊 Analiz Sonucu"
+                    android:text="📊 Hasar Tespit Sonucu"
                     android:textStyle="bold"
                     android:textSize="16sp"
                     android:layout_marginBottom="8dp"/>
@@ -144,7 +144,7 @@
                     android:id="@+id/resultText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Analiz sonucu burada görünecek."
+                    android:text="Hasar tespit sonucu burada görünecek."
                     android:textSize="14sp"
                     android:layout_marginBottom="8dp"/>
 
@@ -176,7 +176,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="📊 Geçmiş Analizler"
+                    android:text="📊 Geçmiş Hasar Tespitleri"
                     android:textStyle="bold"
                     android:textSize="16sp"
                     android:layout_marginBottom="8dp"/>

@@ -51,7 +51,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Sınıf: 0"
+                android:text="Hasar Sınıfı: Crack"
                 android:textSize="13sp"
                 android:textColor="#333333"/>
 
@@ -59,7 +59,7 @@
                 android:id="@+id/historyConfidence"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Güven: %95"
+                android:text="Güven Skoru: %95"
                 android:textSize="13sp"
                 android:textColor="#4CAF50"
                 android:textStyle="bold"/>
